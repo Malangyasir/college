@@ -1,0 +1,63 @@
+*{
+  margin: 0%;
+  padding: 1%;
+}
+  body {
+    overflow: hidden;
+    background-image: url("bgimage.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+  background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  input[type=gmail], input[type=password] {
+    width: 250px;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border-radius: 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 5px 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 75px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }  
+  .imgcontainer {
+    text-align: center;
+    margin: 14px 0 12px 0;
+    position: relative;
+  }
+img.avatar {
+     margin: 2%;
+     padding: 2px;
+     height: 150px;
+         
+  }        
+  .container {
+    padding: 15px;
+  }    
+.login{
+  background-color: rgb(0,0,0,0.5);
+   overflow: hidden;
+  border-radius: 40px;
+  padding: 1%;
+  margin: 0%;
+  position: absolute; 
+  left: 500px;
+  width: 350px;
+  height: 500px;
+}
