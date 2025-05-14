@@ -1,0 +1,291 @@
+*{
+	margin:0%;
+	padding:0%;
+}
+body{
+      background-color: #f1f3f6;
+	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+.navbar-brand {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+.nav-link,
+nav ul li > a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s;
+}
+
+.nav-link:hover,
+nav ul li > a:hover {
+  background-color: #0056b3;
+  border-radius: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  border-radius: 6px;
+  z-index: 1000;
+}
+.dropdown-item {
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-divider {
+  height: 1px;
+  margin: 5px 0;
+  background-color: white;
+}
+nav ul li:hover > .dropdown-menu {
+  display: flex;
+}
+
+form.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+form input[type="search"] {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 10px;
+}
+
+form button {
+  padding: 5px 12px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: blue;
+}
+@media (max-width: 760px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  form.d-flex {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .scroll-section {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .product-card {
+      display: inline-block;
+      width: 150px;
+      margin-right: 20px;
+      vertical-align: top;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 130px;
+      object-fit: contain;
+    }
+
+    .product-title {
+      font-weight: bold;
+      font-size: 14px;
+      margin: 8px 0 4px;
+    }
+
+    .product-offer {
+      font-size: 13px;
+      color: #388e3c;
+    }
+
+
+    .scroll-section::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .scroll-section::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+	.lastpage {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.firstln {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.firstln > div {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+
+.firstln h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+
+.firstln ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.firstln li {
+  margin-bottom: 10px;
+}
+
+.firstln a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.firstln a:hover {
+  color: #ffcc00;
+}
+
+
+.connect p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Social Icons */
+.connect ul {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.connect i {
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.connect a:hover i {
+  background-color: #ffcc00;
+  color: #1f1f1f;
+}
+
+.lower {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-basis: 100%;
+}
+
+.end img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.end img:hover {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .firstln {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .end {
+    justify-content: flex-start;
+  }
+
+  .lower {
+    text-align: left;
+  }
+}
